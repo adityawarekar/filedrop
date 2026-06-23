@@ -245,7 +245,7 @@ async function deregister() {
         }, 200);
       });
     } catch (e) {
-      // Ignore errors on destroy
+      console.error("[mdns] Error during deregistration:", e);
       resolve();
     }
   });
